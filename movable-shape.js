@@ -31,6 +31,7 @@ var movableShape = {
 	// update() groups together all the things that happen each time draw() is called
 	// If you wanted to build some acceleration in here, you might add a line or two to modify the speed
 	update: function () {
+		this.speed.x *= 1.04;
 		this.move();
 	},
 
