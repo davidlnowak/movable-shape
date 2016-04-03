@@ -32,6 +32,8 @@ var movableShape = {
 	// If you wanted to build some acceleration in here, you might add a line or two to modify the speed
 	update: function () {
 		this.move();
+		this.speed.x *= 1.05;
+		this.speed.y *= 1.05;
 	},
 
 	// Applies speed.x and speed.y to the shape
